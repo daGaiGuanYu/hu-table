@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head>
+        <meta charset="utf8">
+        <title>胡大官人的小工具</title>
+
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            html {
+                padding: 0;
+                margin: 0;
+                font-size: 14px;
+            }
+            body {
+                padding: 0;
+                margin: 2rem auto;
+                max-width: 600px;
+            }
+
+            .container {
+                display: inline-block;
+            }
+
+            input {
+                display: block;
+                padding: 0;
+                margin: 0;
+                outline: none;
+            }
+            @media print {
+                input {
+                    border: none;
+                }
+            }
+
+            .company_name {
+                text-align: center;
+                font-size: 18px;
+                font-weight: 700;
+                width: 100%;
+                margin-bottom: 2rem;
+            }
+
+            .key {
+                margin-right: 1em;
+                color: #666;
+            }
+            .row {
+                display: flex;
+                margin-bottom: .6em;
+            }
+            .row input {
+                flex: 1;
+            }
+            .row2 {
+                display: flex;
+                margin-bottom: 1.6em;
+            }
+            .row2 .item {
+                flex: 1;
+                display: flex;
+                align-items: stretch;
+            }
+            .handwrite {
+                flex: 1;
+                border-bottom: 1px solid #666;
+                margin-right: 3em;
+            }
+
+            table {
+                border-collapse: collapse;
+                width: 100%;
+            }
+            td {
+                height: 3em;
+                border: 1px solid #666;
+                padding: 0;
+            }
+            td.item3 > * {
+                width: 31%;
+                text-align: center;
+                display: inline-block;
+                border: none;
+                outline: none;
+            }
+            td.item3 *:not(:last-child) {
+                border-right: 1px solid #eee;
+            }
+            td.item3  .no {
+                color: #888;
+            }
+
+            .big {
+                height: 60px;
+                padding-left: 36px;
+            }
+        </style>
+    </head>
+    <body>
+        <input class="company_name" value="苏州乾德拍卖有限公司">
+
+        <div class="row">
+            <div class="key">拍卖时间</div>
+            <input type="date">
+        </div>
+        <div class="row">
+            <div class="key">拍卖地点</div>
+            <input value="苏州工业园区扬东路277号晶汇大厦3幢1215室">
+        </div>
+        <div class="row">
+            <div class="key">拍卖标的</div>
+            <input>
+        </div>
+
+
+        <div class="row2">
+            <div class="item">
+                <div class="key">拍品编号</div>
+                <div class="handwrite"></div>
+            </div>
+            <div class="item">
+                <div class="key">起拍价</div>
+                <div class="handwrite"></div>
+            </div>
+        </div>
+
+        <table>
+            <tbody>
+                <tr>
+                    <td class="item3">
+                        <span>序号</span>
+                        <span>号牌</span>
+                        <span>竞价</span>
+                    </td>
+                    <td class="item3">
+                        <span>序号</span>
+                        <span>号牌</span>
+                        <span>竞价</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="item3">
+                        <span class="no">01</span>
+                        <input>
+                        <input>
+                    </td>
+                    <td class="item3">
+                        <span class="no">15</span>
+                        <input>
+                        <input>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="item3">
+                        <span class="no">02</span>
+                        <input>
+                        <input>
+                    </td>
+                    <td class="item3">
+                        <span class="no">16</span>
+                        <input>
+                        <input>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="item3">
+                        <span class="no">03</span>
+                        <input>
+                        <input>
+                    </td>
+                    <td class="item3">
+                        <span class="no">17</span>
+                        <input>
+                        <input>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="item3">
+                        <span class="no">04</span>
+                        <input>
+                        <input>
+                    </td>
+                    <td class="item3">
+                        <span class="no">18</span>
+                        <input>
+                        <input>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="item3">
+                        <span class="no">05</span>
+                        <input>
+                        <input>
+                    </td>
+                    <td class="item3">
+                        <span class="no">19</span>
+                        <input>
+                        <input>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="item3">
+                        <span class="no">06</span>
+                        <input>
+                        <input>
+                    </td>
+                    <td class="item3">
+                        <span class="no">20</span>
+                        <input>
+                        <input>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="item3">
+                        <span class="no">07</span>
+                        <input>
+                        <input>
+                    </td>
+                    <td class="item3">
+                        <span class="no">21</span>
+                        <input>
+                        <input>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="item3">
+                        <span class="no">08</span>
+                        <input>
+                        <input>
+                    </td>
+                    <td class="item3">
+                        <span class="no">22</span>
+                        <input>
+                        <input>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="item3">
+                        <span class="no">09</span>
+                        <input>
+                        <input>
+                    </td>
+                    <td class="item3">
+                        <span class="no">23</span>
+                        <input>
+                        <input>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="item3">
+                        <span class="no">10</span>
+                        <input>
+                        <input>
+                    </td>
+                    <td class="item3">
+                        <span class="no">24</span>
+                        <input>
+                        <input>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="item3">
+                        <span class="no">11</span>
+                        <input>
+                        <input>
+                    </td>
+                    <td class="item3">
+                        <span class="no">25</span>
+                        <input>
+                        <input>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="item3">
+                        <span class="no">12</span>
+                        <input>
+                        <input>
+                    </td>
+                    <td class="item3">
+                        <span class="no">26</span>
+                        <input>
+                        <input>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="item3">
+                        <span class="no">13</span>
+                        <input>
+                        <input>
+                    </td>
+                    <td class="item3">
+                        <span class="no">27</span>
+                        <input>
+                        <input>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="item3">
+                        <span class="no">14</span>
+                        <input>
+                        <input>
+                    </td>
+                    <td class="item3">
+                        <span class="no">28</span>
+                        <input>
+                        <input>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="big" colspan="2">
+                        竞拍人（签字）
+                    </td>
+                </tr>
+                <tr>
+                    <td class="big">
+                        记录人（签字）
+                    </td>
+                    <td class="big">
+                        买受人（签字）
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="big" colspan="2">
+                        成交价（大写）
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
