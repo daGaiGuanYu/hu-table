@@ -79,17 +79,23 @@
                 border: 1px solid #666;
                 padding: 0;
             }
-            td.item3 > * {
-                width: 31%;
+
+            .item3_wrapper {
+                display: flex;
+            }
+            .item3_wrapper > * {
+                flex: 1;
+                width: 33%;
+                display: block;
                 text-align: center;
-                display: inline-block;
+                margin: 0;
                 border: none;
                 outline: none;
             }
-            td.item3 *:not(:last-child) {
+            .item3_wrapper *:not(:last-child) {
                 border-right: 1px solid #aaa;
             }
-            td.item3  .no {
+            .item3_wrapper  .no {
                 color: #888;
             }
 
@@ -100,7 +106,7 @@
         </style>
     </head>
     <body>
-        <input class="company_name" value="苏州乾德拍卖有限公司">
+        <input class="company_name" value="苏州乾德拍卖有限公司竞价记录">
 
         <div class="row">
             <div class="key">拍卖地点</div>
@@ -135,182 +141,226 @@
             <tbody>
                 <tr>
                     <td class="item3">
-                        <span>序号</span>
-                        <span>号牌</span>
-                        <span>竞价</span>
+                        <div class="item3_wrapper">
+                            <span>序号</span>
+                            <span>号牌</span>
+                            <span>竞价</span>
+                        </div>
                     </td>
                     <td class="item3">
-                        <span>序号</span>
-                        <span>号牌</span>
-                        <span>竞价</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="item3">
-                        <span class="no">01</span>
-                        <input>
-                        <input>
-                    </td>
-                    <td class="item3">
-                        <span class="no">15</span>
-                        <input>
-                        <input>
+                        <div class="item3_wrapper">
+                            <span>序号</span>
+                            <span>号牌</span>
+                            <span>竞价</span>
+                        </div>
                     </td>
                 </tr>
                 <tr>
                     <td class="item3">
-                        <span class="no">02</span>
-                        <input>
-                        <input>
+                        <div class="item3_wrapper">
+                            <span class="no">01</span>
+                            <input>
+                            <input>
+                        </div>
                     </td>
                     <td class="item3">
-                        <span class="no">16</span>
-                        <input>
-                        <input>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="item3">
-                        <span class="no">03</span>
-                        <input>
-                        <input>
-                    </td>
-                    <td class="item3">
-                        <span class="no">17</span>
-                        <input>
-                        <input>
+                        <div class="item3_wrapper">
+                            <span class="no">14</span>
+                            <input>
+                            <input>
+                        </div>
                     </td>
                 </tr>
                 <tr>
                     <td class="item3">
-                        <span class="no">04</span>
-                        <input>
-                        <input>
+                        <div class="item3_wrapper">
+                            <span class="no">02</span>
+                            <input>
+                            <input>
+                        </div>
                     </td>
                     <td class="item3">
-                        <span class="no">18</span>
-                        <input>
-                        <input>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="item3">
-                        <span class="no">05</span>
-                        <input>
-                        <input>
-                    </td>
-                    <td class="item3">
-                        <span class="no">19</span>
-                        <input>
-                        <input>
+                        <div class="item3_wrapper">
+                            <span class="no">15</span>
+                            <input>
+                            <input>
+                        </div>
                     </td>
                 </tr>
                 <tr>
                     <td class="item3">
-                        <span class="no">06</span>
-                        <input>
-                        <input>
+                        <div class="item3_wrapper">
+                            <span class="no">03</span>
+                            <input>
+                            <input>
+                        </div>
                     </td>
                     <td class="item3">
-                        <span class="no">20</span>
-                        <input>
-                        <input>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="item3">
-                        <span class="no">07</span>
-                        <input>
-                        <input>
-                    </td>
-                    <td class="item3">
-                        <span class="no">21</span>
-                        <input>
-                        <input>
+                        <div class="item3_wrapper">
+                            <span class="no">16</span>
+                            <input>
+                            <input>
+                        </div>
                     </td>
                 </tr>
                 <tr>
                     <td class="item3">
-                        <span class="no">08</span>
-                        <input>
-                        <input>
+                        <div class="item3_wrapper">
+                            <span class="no">04</span>
+                            <input>
+                            <input>
+                        </div>
                     </td>
                     <td class="item3">
-                        <span class="no">22</span>
-                        <input>
-                        <input>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="item3">
-                        <span class="no">09</span>
-                        <input>
-                        <input>
-                    </td>
-                    <td class="item3">
-                        <span class="no">23</span>
-                        <input>
-                        <input>
+                        <div class="item3_wrapper">
+                            <span class="no">17</span>
+                            <input>
+                            <input>
+                        </div>
                     </td>
                 </tr>
                 <tr>
                     <td class="item3">
-                        <span class="no">10</span>
-                        <input>
-                        <input>
+                        <div class="item3_wrapper">
+                            <span class="no">05</span>
+                            <input>
+                            <input>
+                        </div>
                     </td>
                     <td class="item3">
-                        <span class="no">24</span>
-                        <input>
-                        <input>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="item3">
-                        <span class="no">11</span>
-                        <input>
-                        <input>
-                    </td>
-                    <td class="item3">
-                        <span class="no">25</span>
-                        <input>
-                        <input>
+                        <div class="item3_wrapper">
+                            <span class="no">18</span>
+                            <input>
+                            <input>
+                        </div>
                     </td>
                 </tr>
                 <tr>
                     <td class="item3">
-                        <span class="no">12</span>
-                        <input>
-                        <input>
+                        <div class="item3_wrapper">
+                            <span class="no">06</span>
+                            <input>
+                            <input>
+                        </div>
                     </td>
                     <td class="item3">
-                        <span class="no">26</span>
-                        <input>
-                        <input>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="item3">
-                        <span class="no">13</span>
-                        <input>
-                        <input>
-                    </td>
-                    <td class="item3">
-                        <span class="no">27</span>
-                        <input>
-                        <input>
+                        <div class="item3_wrapper">
+                            <span class="no">19</span>
+                            <input>
+                            <input>
+                        </div>
                     </td>
                 </tr>
                 <tr>
                     <td class="item3">
-                        <span class="no">14</span>
-                        <input>
-                        <input>
+                        <div class="item3_wrapper">
+                            <span class="no">07</span>
+                            <input>
+                            <input>
+                        </div>
                     </td>
                     <td class="item3">
-                        <span class="no">28</span>
-                        <input>
-                        <input>
+                        <div class="item3_wrapper">
+                            <span class="no">20</span>
+                            <input>
+                            <input>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="item3">
+                        <div class="item3_wrapper">
+                            <span class="no">08</span>
+                            <input>
+                            <input>
+                        </div>
+                    </td>
+                    <td class="item3">
+                        <div class="item3_wrapper">
+                            <span class="no">21</span>
+                            <input>
+                            <input>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="item3">
+                        <div class="item3_wrapper">
+                            <span class="no">09</span>
+                            <input>
+                            <input>
+                        </div>
+                    </td>
+                    <td class="item3">
+                        <div class="item3_wrapper">
+                            <span class="no">22</span>
+                            <input>
+                            <input>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="item3">
+                        <div class="item3_wrapper">
+                            <span class="no">10</span>
+                            <input>
+                            <input>
+                        </div>
+                    </td>
+                    <td class="item3">
+                        <div class="item3_wrapper">
+                            <span class="no">23</span>
+                            <input>
+                            <input>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="item3">
+                        <div class="item3_wrapper">
+                            <span class="no">11</span>
+                            <input>
+                            <input>
+                        </div>
+                    </td>
+                    <td class="item3">
+                        <div class="item3_wrapper">
+                            <span class="no">24</span>
+                            <input>
+                            <input>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="item3">
+                        <div class="item3_wrapper">
+                            <span class="no">12</span>
+                            <input>
+                            <input>
+                        </div>
+                    </td>
+                    <td class="item3">
+                        <div class="item3_wrapper">
+                            <span class="no">25</span>
+                            <input>
+                            <input>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="item3">
+                        <div class="item3_wrapper">
+                            <span class="no">13</span>
+                            <input>
+                            <input>
+                        </div>
+                    </td>
+                    <td class="item3">
+                        <div class="item3_wrapper">
+                            <span class="no">26</span>
+                            <input>
+                            <input>
+                        </div>
                     </td>
                 </tr>
 
