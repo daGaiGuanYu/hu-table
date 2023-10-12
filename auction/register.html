@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head>
+        <meta charset="utf8">
+        <link rel="icon" href="../favicon.ico">
+        <title>竞买登记 - 胡大官人的小工具</title>
+
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            html {
+                padding: 0;
+                margin: 0;
+                font-size: 14px;
+            }
+            body {
+                padding: 0;
+                margin: 2rem auto;
+                max-width: 600px;
+            }
+
+            .container {
+                display: inline-block;
+            }
+
+            input {
+                display: block;
+                padding: 0;
+                margin: 0;
+                outline: none;
+            }
+            @media print {
+                input {
+                    border: none;
+                }
+            }
+
+            .company_name {
+                text-align: center;
+                font-size: 18px;
+                font-weight: 700;
+                width: 100%;
+                margin-bottom: 2rem;
+            }
+
+            .doc_name {
+                text-align: center;
+                font-size: 16px;
+                font-weight: 500;
+                width: 100%;
+                margin-bottom: 3rem;
+            }
+
+            .comment {
+                text-align: right;
+                margin-bottom: 2em;
+            }
+            .comment > div {
+                display: flex;
+                align-items: stretch;
+                justify-content: flex-end;
+                margin-bottom: .6em;
+            }
+            span.input {
+                display: inline-block;
+                width: 38px;
+                margin: 0 .5em;
+                border-bottom: 1px solid #666;
+            }
+
+            .key {
+                width: 100px;
+                text-align: right;
+                margin-right: 1em;
+                color: #666;
+            }
+            .row {
+                display: flex;
+                margin-bottom: 1em;
+                line-height: 2;
+            }
+            .row input {
+                flex: 1;
+            }
+            .handwrite {
+                flex: 1;
+                border-bottom: 1px solid #666;
+            }
+
+            table {
+                border-collapse: collapse;
+                width: 100%;
+            }
+            td {
+                height: 3em;
+                border: 1px solid #666;
+                padding: 0;
+            }
+
+            .item3_wrapper {
+                display: flex;
+            }
+            .item3_wrapper > * {
+                flex: 1;
+                width: 33%;
+                display: block;
+                text-align: center;
+                margin: 0;
+                border: none;
+                outline: none;
+            }
+            .item3_wrapper *:not(:last-child) {
+                border-right: 1px solid #aaa;
+            }
+            .item3_wrapper  .no {
+                color: #888;
+            }
+
+            .signature {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                margin-top: 4em;
+            }
+            .signature input {
+                text-align: right;
+                margin-bottom: 1em;
+            }
+            .signature .input {
+                border-bottom: none;
+            }
+        </style>
+    </head>
+    <body>
+        <input class="company_name" value="苏州乾德拍卖有限公司">
+        <input class="doc_name" value="竞买登记表">
+
+        <div class="comment">
+            <div>
+                <span class="input"></span>
+                年
+                <span class="input"></span>
+                期
+            </div>
+            <div>
+                号牌
+                <span class="input"></span>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="key">竞买人姓名</div>
+            <div class="handwrite"></div>
+        </div>
+
+        <div class="row">
+            <div class="key">证（照）号码</div>
+            <div class="handwrite"></div>
+        </div>
+        
+        <div class="row">
+            <div class="key">联系电话</div>
+            <div class="handwrite"></div>
+        </div>
+
+        <div class="row">
+            <div class="key">保证金（大写）</div>
+            <div class="handwrite"></div>
+        </div>
+
+        <div class="row">
+            <div class="key">竞买意向</div>
+            <div class="handwrite"></div>
+        </div>
+        
+        <div class="row">
+            <div class="key">备注</div>
+            <div class="handwrite"></div>
+        </div>
+
+        <div class="signature">
+            <input value="苏州乾德拍卖有限公司">
+            <div>
+                <span class="input"></span>
+                年
+                <span class="input"></span>
+                月
+                <span class="input"></span>
+                日
+            </div>
+        </div>
+    </body>
+</html>
